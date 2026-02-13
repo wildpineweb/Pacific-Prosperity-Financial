@@ -1,7 +1,7 @@
 {
-    "name": "intermediate-website-kit-less",
-    "version": "2.0.1",
-    "description": "The official CodeStitch Intermediate kit, featuring 11ty, Decap CMS and LESS - all set up for you! Perfect for websites of all sizes.",
+    "name": "pacific-prosperity-financial",
+    "version": "1.0.0",
+    "description": "Website for Pacific Prosperity Financial - Mortgage Note Brokering",
     "main": "index.js",
     "scripts": {
         "watch:cms": "npx decap-server",
@@ -11,17 +11,10 @@
         "build": "run-s build:*",
 		"preview": "cross-env ELEVENTY_ENV=PROD eleventy --serve"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/CodeStitchOfficial/Intermediate-Website-Kit-LESS.git"
-    },
     "keywords": [],
-    "author": "",
+    "author": "Pacific Prosperity Financial",
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/CodeStitchOfficial/Intermediate-Website-Kit-LESS/issues"
-    },
-    "homepage": "https://github.com/CodeStitchOfficial/Intermediate-Website-Kit-LESS#readme",
+    "homepage": "https://www.pacificprosperityfinancial.com",
     "dependencies": {
         "@11ty/eleventy": "^3.1.2",
         "@codestitchofficial/eleventy-plugin-minify": "^1.1.3",
