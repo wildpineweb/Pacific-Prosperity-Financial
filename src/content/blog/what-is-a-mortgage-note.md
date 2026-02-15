@@ -4,7 +4,7 @@ url: what-is-a-mortgage-note
 description: Discover everything you need to know about mortgage notes, how they work, and why selling your note might be the right financial move for you.
 author: Tim Joslen
 authorImage: /assets/images/blog/tim-joslen.jpg
-date: 2025-02-12T10:00:00.000Z
+date: 2026-02-12T10:00:00.000Z
 tags:
     - post
     - featured

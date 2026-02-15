@@ -4,7 +4,7 @@ url: how-to-sell-your-mortgage-note
 description: Learn the complete process of selling your mortgage note, from preparation to closing. Get competitive offers and convert future payments into immediate cash.
 author: Tim Joslen
 authorImage: /assets/images/blog/tim-joslen.jpg
-date: 2025-02-10T10:00:00.000Z
+date: 2026-02-10T10:00:00.000Z
 tags:
     - post
     - featured
@@ -202,10 +202,15 @@ While this represents a typical 30-35 day process, urgent situations can sometim
 When you're ready to sell your mortgage note, your choice of buyer matters enormously. Pacific Prosperity Financial offers:
 
 ✓ **Over 35 years of combined experience** in real estate financing and note transactions
+
 ✓ **Transparent, competitive pricing** with no hidden fees or surprise deductions
+
 ✓ **Fast closings** typically within 30 days, with expedited options when needed
+
 ✓ **Flexible options** including full sales, partial sales, and creative structuring
+
 ✓ **White-glove service** with personalized attention throughout the entire process
+
 ✓ **Extensive investor network** to secure multiple competitive bids for your note
 
 ## Take the Next Step Today
