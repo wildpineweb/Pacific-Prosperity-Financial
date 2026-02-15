@@ -8,9 +8,9 @@ module.exports = {
         lineTwo: "",
         city: "Portland",
         state: "OR",
-        zip: "97201",
+        zip: "",
         country: "US",
-        mapLink: "https://maps.app.goo.gl/Portland",
+        mapLink: "",
     },
     socials: {
         facebook: "https://www.facebook.com/PacificProsperityFinancial",

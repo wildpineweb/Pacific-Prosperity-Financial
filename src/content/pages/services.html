@@ -1,0 +1,99 @@
+---
+title: "Services | Pacific Prosperity Financial"
+description: "Explore our mortgage note brokering services including note purchasing, note selling, portfolio analysis, and personalized consultation."
+permalink: "/services/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/services.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Our Services</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link cs-active">Services</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/page-banner-m.webp">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="/assets/images/page-banner-t.webp">
+            <!--Desktop Image-->
+            <img src="/assets/images/page-banner-d.webp" alt="services banner" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-detail">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">What We Offer</span>
+                <h2 class="cs-title">Comprehensive Mortgage Note Solutions</h2>
+                <p class="cs-text">
+                    Pacific Prosperity Financial provides a full suite of mortgage note brokering services. Whether you hold a single note or manage a large portfolio, we have the expertise and network to help you achieve your financial goals.
+                </p>
+            </div>
+
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <img class="cs-light" loading="lazy" decoding="async" src="/assets/svgs/note-purchasing-icon-green.svg" alt="" width="52" height="52" aria-hidden="true">
+                        <img class="cs-dark" loading="lazy" decoding="async" src="/assets/svgs/note-purchasing-icon-white.svg" alt="" width="52" height="52" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Note Purchasing</h3>
+                    <p class="cs-item-text">
+                        We buy performing and non-performing mortgage notes directly from note holders. Our team evaluates each note individually to provide you with a fair, competitive cash offer. Whether your note is secured by residential or commercial property, we have the capital and expertise to close quickly.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <img class="cs-light" loading="lazy" decoding="async" src="/assets/svgs/note-selling-icon-green.svg" alt="" width="52" height="52" aria-hidden="true">
+                        <img class="cs-dark" loading="lazy" decoding="async" src="/assets/svgs/note-selling-icon-white.svg" alt="" width="52" height="52" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Note Selling</h3>
+                    <p class="cs-item-text">
+                        Looking to sell your mortgage note? We connect you with our extensive network of qualified investors who are actively seeking note investments. We handle the marketing, due diligence coordination, and negotiation so you can focus on your next opportunity.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <img class="cs-light" loading="lazy" decoding="async" src="/assets/svgs/portfolio-analysis-icon-green.svg" alt="" width="52" height="52" aria-hidden="true">
+                        <img class="cs-dark" loading="lazy" decoding="async" src="/assets/svgs/portfolio-analysis-icon-white.svg" alt="" width="52" height="52" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Portfolio Analysis</h3>
+                    <p class="cs-item-text">
+                        Our portfolio analysis service provides a comprehensive evaluation of your note holdings. We assess performance metrics, identify risks and opportunities, and deliver actionable recommendations to help you maximize the value of your investments.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <img class="cs-light" loading="lazy" decoding="async" src="/assets/svgs/consultation-icon-green.svg" alt="" width="52" height="52" aria-hidden="true">
+                        <img class="cs-dark" loading="lazy" decoding="async" src="/assets/svgs/consultation-icon-white.svg" alt="" width="52" height="52" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Consultation</h3>
+                    <p class="cs-item-text">
+                        Not sure where to start? Our personalized consultation service guides you through the mortgage note landscape. Whether you are a first-time note seller, a seasoned investor, or exploring options, we provide expert advice tailored to your specific situation and goals.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

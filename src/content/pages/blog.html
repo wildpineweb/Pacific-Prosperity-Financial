@@ -7,7 +7,7 @@ permalink: "/blog/"
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" />
+    <link rel="preload" as="image" href="/assets/images/page-banner-m.webp" />
     <link rel="stylesheet" href="/assets/css/blog.css">
 {% endblock %}
 
@@ -27,18 +27,11 @@ permalink: "/blog/"
         <!--Background Image-->
         <picture class="cs-background">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 600px)" srcset="/assets/images/page-banner-m.webp">
             <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="/assets/images/page-banner-t.webp">
             <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+            <img src="/assets/images/page-banner-d.webp" alt="blog banner" width="1920" height="482" loading="eager" decoding="async">
         </picture>
     </div>
 
@@ -73,7 +66,7 @@ permalink: "/blog/"
                         <div class="cs-article-group">
                             <div class="cs-author-group">
                                 <picture class="cs-author-img">
-                                    <img src="/assets/svgs/profile.svg" alt="Profile icon" width="32" height="32" decoding="async" loading="lazy" aria-hidden="true" />
+                                    <img src="{% if post.data.authorImage %}{{ post.data.authorImage }}{% else %}/assets/svgs/profile.svg{% endif %}" alt="{{ post.data.author }}" width="32" height="32" decoding="async" loading="lazy" />
                                 </picture>
                                 <span class="cs-author-name">{{ post.data.author }}</span>
                                 <span aria-hidden="true" class="cs-dot"></span>

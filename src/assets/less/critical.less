@@ -99,6 +99,10 @@
             margin: auto;
         }
 
+        .cs-topper {
+            color: var(--goldenFinch);
+        }
+
         .cs-title {
             /* 39px - 61px */
             font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
@@ -120,7 +124,7 @@
                 height: clamp(0.25rem, 0.8vw, 0.5rem);
                 /* 16px - 24px */
                 margin: clamp(1rem, 4vw, 1.5rem) auto clamp(1rem, 4vw, 1.5rem);
-                background: var(--primary);
+                background: var(--goldenFinch);
                 opacity: 1;
                 position: relative;
                 display: block;
@@ -146,7 +150,7 @@
 /* Desktop - 1300px (To make image background parallax) */
 @media only screen and (min-width: 81.25rem) {
     #hero-143 {
-        background: url("/assets/images/landing.jpg");
+        background: url("/assets/images/home-hero-bg-d.webp");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -234,6 +238,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            color: #fff;
 
             img {
                 /* 44px - 52px */
@@ -310,10 +315,11 @@
         #h-services-143 {
             .cs-card-group {
                 background: var(--medium);
+                border-top-color: var(--goldenFinch);
             }
 
             .cs-icon {
-                background: var(--darkTint);
+                background: var(--primaryLight);
             }
 
             .cs-title {

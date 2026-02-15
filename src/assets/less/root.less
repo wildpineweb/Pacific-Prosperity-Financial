@@ -20,6 +20,9 @@
 		--headerColor: #030604;
 		--bodyTextColor: #383b39;
 		--bodyTextColorWhite: #fafbfc;
+		--fogGray: #D9E1E2;
+		--driftwoodSand: #C9B9A6;
+		--goldenFinch: #D8A546;
 
 		/* Dark Mode Styles */
 		--dark: #0C1F15;
@@ -34,8 +37,8 @@
 		/* 60px - 100px top and bottom */
 		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
-		--headerFont: "Roboto", Arial, sans-serif;
-		--bodyFont: "Roboto", Arial, sans-serif;
+		--headerFont: "Libre Baskerville", Georgia, serif;
+		--bodyFont: "Inter", Arial, sans-serif;
 	}
 
 	html,
@@ -101,9 +104,17 @@
 		top: 0;
 		left: 0;
 		opacity: 0;
+		padding: 1rem;
+		background: white;
+		border-bottom-right-radius: 3px;
+
+		&:focus {
+			z-index: 99999;
+			opacity: 1;
+		}
 	}
 
-	// Buttons - can be replaced using CodeStitch's "Button" Stitches. Make sure to clear the default .cs-button-solid/outline styles from any new stitches you place.
+	// Buttons - Split reveal animation: two halves slide in from left and right to meet in the middle
 	.cs-button-solid {
 		z-index: 1;
 		position: relative;
@@ -126,27 +137,36 @@
 		text-align: center;
 
 		&:hover {
-			color: #fff;
+			color: var(--headerColor);
 
 			&:before {
-				width: 100%;
+				width: 50%;
+			}
+
+			&:after {
+				width: 50%;
 			}
 		}
 
-		&:before {
+		&:before,
+		&:after {
 			z-index: -1;
 			position: absolute;
 			top: 0;
-			left: 0;
 			content: "";
-			opacity: 1;
 			display: block;
-			background-color: #000;
+			background-color: var(--goldenFinch);
 			height: 100%;
-
-			//Transition properties
 			width: 0;
 			transition: width 0.3s;
+		}
+
+		&:before {
+			left: 0;
+		}
+
+		&:after {
+			right: 0;
 		}
 	}
 
@@ -290,37 +310,55 @@
 		h6 {
 			color: #fff;
 		}
+
+		.cs-topper {
+			color: var(--goldenFinch);
+		}
 	}
 }
 
 /* Fonts */
 @media only screen and (min-width: 0px) {
-	// Grab your fonts to locally host from https://gwfh.mranftl.com/fonts
-	/* roboto-regular - latin */
+	/* Libre Baskerville - headings */
 	@font-face {
 		font-style: normal;
-		font-family: "Roboto";
+		font-family: "Libre Baskerville";
 		font-weight: 400;
 		font-display: swap;
-		src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		src: url("/assets/fonts/LibreBaskerville-Regular.ttf") format("truetype");
 	}
 
-	/* roboto-700 - latin */
 	@font-face {
 		font-style: normal;
-		font-family: "Roboto";
+		font-family: "Libre Baskerville";
 		font-weight: 700;
 		font-display: swap;
-		src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		src: url("/assets/fonts/LibreBaskerville-Bold.ttf") format("truetype");
 	}
 
-	/* roboto-900 - latin */
 	@font-face {
 		font-style: normal;
-		font-family: "Roboto";
+		font-family: "Libre Baskerville";
 		font-weight: 900;
 		font-display: swap;
-		src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		src: url("/assets/fonts/LibreBaskerville-SemiBold.ttf") format("truetype");
+	}
+
+	/* Inter - body */
+	@font-face {
+		font-style: normal;
+		font-family: "Inter";
+		font-weight: 400;
+		font-display: swap;
+		src: url("/assets/fonts/Inter_18pt-Regular.ttf") format("truetype");
+	}
+
+	@font-face {
+		font-style: normal;
+		font-family: "Inter";
+		font-weight: 700;
+		font-display: swap;
+		src: url("/assets/fonts/Inter_18pt-Bold.ttf") format("truetype");
 	}
 }
 
@@ -351,10 +389,10 @@
 		padding: 0;
 		background: transparent;
 		border: none;
-		display: block;
-		position: absolute;
-		top: (10/16rem);
-		right: (70/16rem);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
 		z-index: 1000;
 		overflow: hidden;
 
@@ -392,10 +430,6 @@
 @media only screen and (min-width: 1024px) {
 	#dark-mode-toggle {
 		margin: 0;
-		position: relative;
-		top: auto;
-		right: auto;
-		transform: none;
 
 		&:hover {
 			cursor: pointer;
@@ -469,7 +503,7 @@
 
 		.cs-logo {
 			width: 40%;
-			max-width: (146/16rem);
+			max-width: (120/16rem);
 			height: 100%;
 			margin: 0 auto 0 0;
 			/* prevents padding and border from affecting height and width */
@@ -481,7 +515,7 @@
 			z-index: 10;
 
 			img {
-				width: 100%;
+				width: 75px;
 				height: 100%;
 				/* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
 				object-fit: contain;
@@ -676,11 +710,6 @@
 	body.dark-mode {
 		#cs-navigation {
 			background-color: var(--dark);
-
-			.cs-logo {
-				/* makes it white */
-				filter: grayscale(1) brightness(1000%);
-			}
 
 			.cs-line {
 				background-color: #fff;
@@ -1003,7 +1032,7 @@
 			z-index: 100;
 
 			img {
-				width: 100%;
+				width: 75px;
 				height: 100%;
 				/* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
 				object-fit: contain;
@@ -1072,18 +1101,13 @@
 		#cs-navigation {
 			background-color: var(--dark);
 
-			.cs-logo {
-				/* makes it turn white */
-				filter: grayscale(1) brightness(1000%);
-			}
-
 			.cs-li-link {
 				color: var(--bodyTextColorWhite);
 			}
 
 			.cs-li-link {
 				&:before {
-					background-color: var(--primaryLight);
+					background-color: var(--goldenFinch);
 				}
 			}
 		}
@@ -1164,7 +1188,7 @@
 			}
 
 			&.cs-active {
-				color: var(--primaryLight);
+				color: var(--goldenFinch);
 			}
 		}
 
@@ -1232,6 +1256,10 @@
 			flex-direction: column;
 			/* centers content horizontally, set to flex-start to left align */
 			align-items: center;
+		}
+
+		.cs-topper {
+			color: var(--goldenFinch);
 		}
 
 		.cs-title {
@@ -1387,7 +1415,7 @@
 			font-size: (16/16rem);
 			line-height: 1.5em;
 			font-weight: 700;
-			color: var(--bodyTextColorWhite);
+			color: var(--goldenFinch);
 			position: relative;
 
 			&:after {
@@ -1395,7 +1423,7 @@
 				width: (32/16rem);
 				height: (4/16rem);
 				margin: (16/16rem) auto (24/16rem) 0;
-				background: var(--primary);
+				background: var(--goldenFinch);
 				opacity: 1;
 				position: relative;
 				display: block;

@@ -1,0 +1,124 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// PAGE STYLES - Services
+// ─────────────────────────────────────────────────────────────────────────────
+
+/*-- -------------------------- -->
+<---      Services Detail       -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-detail {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            max-width: (900/16rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-title {
+            max-width: 20ch;
+        }
+
+        .cs-card-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: (24/16rem);
+        }
+
+        .cs-item {
+            list-style: none;
+            width: 100%;
+            padding: clamp(1.5rem, 3vw, 2.5rem);
+            background-color: #f7f7f7;
+            border-radius: (16/16rem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: (16/16rem);
+            transition: background-color 0.3s;
+        }
+
+        .cs-icon {
+            width: (52/16rem);
+            height: (52/16rem);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cs-h3 {
+            /* 20px - 25px */
+            font-size: clamp(1.25rem, 2vw, 1.5625rem);
+            font-family: var(--headerFont);
+            line-height: 1.2em;
+            margin: 0;
+            color: var(--headerColor);
+        }
+
+        .cs-item-text {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #services-detail {
+        .cs-card-group {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .cs-item {
+            width: calc(50% - (12/16rem));
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #services-detail {
+            .cs-topper {
+                color: var(--goldenFinch);
+            }
+
+            .cs-title,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-item {
+                background-color: var(--medium);
+            }
+
+            .cs-h3,
+            .cs-item-text {
+                color: var(--bodyTextColorWhite);
+            }
+        }
+    }
+}
