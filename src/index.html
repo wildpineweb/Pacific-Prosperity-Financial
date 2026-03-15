@@ -1,6 +1,6 @@
 ---
-title: "Mortgage Note Brokering | Pacific Prosperity Financial | Portland, OR"
-description: "Pacific Prosperity Financial specializes in mortgage note brokering, helping note holders sell their mortgage notes and connecting investors with quality note investments."
+title: "Sell Your Mortgage Note or Invest in Notes | Pacific Prosperity Financial | Portland, OR"
+description: "Turn your mortgage note into cash or invest in real-estate-backed notes without the hassle of property management. Pacific Prosperity Financial serves note sellers and investors nationwide."
 permalink: "/"
 tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
 ---
@@ -37,12 +37,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <div class="cs-container">
             <span class="cs-topper">Pacific Prosperity Financial</span>
             <h1 class="cs-title">
-                Your Partner in Mortgage Note Investing
+                Turn Your Mortgage Note Into Cash
             </h1>
             <p class="cs-text">
-                We specialize in buying and selling mortgage notes, providing note holders with fair cash offers and connecting investors with quality note portfolios.
+                Holding a mortgage note and ready to cash out? We connect note sellers with qualified investors to get you the best price — fast, fair, and hassle-free. Investors, we also help you find quality notes backed by real property.
             </p>
-            <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+            <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
         </div>
 
         <!-- Background Image -->
@@ -65,10 +65,10 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <img loading="lazy" decoding="async" src="/assets/svgs/note-purchasing-icon-white.svg" alt="" width="52" height="52" aria-hidden="true">
                 </picture>
                 <h2 class="cs-title">
-                    Note Purchasing
+                    Sell Your Note
                 </h2>
                 <p class="cs-text">
-                    We buy performing and non-performing mortgage notes, providing fair and competitive cash offers.
+                    Ready to cash out your mortgage note? We broker your note to multiple qualified investors so you get the best price — no fees, no hassle.
                 </p>
             </li>
             <li class="cs-item">
@@ -76,21 +76,10 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <img loading="lazy" decoding="async" src="/assets/svgs/note-selling-icon-white.svg" alt="" width="52" height="52" aria-hidden="true">
                 </picture>
                 <h2 class="cs-title">
-                    Note Selling
+                    Invest in Notes
                 </h2>
                 <p class="cs-text">
-                    Connect with qualified buyers for your mortgage notes through our extensive investor network.
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/portfolio-analysis-icon-white.svg" alt="" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Portfolio Analysis
-                </h2>
-                <p class="cs-text">
-                    Get expert analysis of your note portfolio to maximize value and identify investment opportunities.
+                    Earn attractive real estate returns without the headaches of property management. No tenants, no maintenance — just consistent, property-backed income.
                 </p>
             </li>
             <li class="cs-item">
@@ -98,10 +87,10 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <img loading="lazy" decoding="async" src="/assets/svgs/consultation-icon-white.svg" alt="" width="52" height="52" aria-hidden="true">
                 </picture>
                 <h2 class="cs-title">
-                    Consultation
+                    Free Consultation
                 </h2>
                 <p class="cs-text">
-                    Personalized guidance on mortgage note transactions, whether you are buying, selling, or investing.
+                    Not sure where to start? We will walk you through your options in a no-pressure, no-obligation conversation.
                 </p>
             </li>
         </ul>
@@ -117,7 +106,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <span class="cs-topper">How It Works</span>
                 <h2 class="cs-title">A Simple, Transparent Process</h2>
                 <p class="cs-text">
-                    From your first inquiry to closing, we handle every detail so you can focus on what matters most.
+                    Selling a mortgage note can feel complicated, but it does not have to be. We handle every detail from start to finish so you can focus on what matters most.
                 </p>
             </div>
             <ul class="cs-card-group">
@@ -145,6 +134,253 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             </ul>
         </div>
     </section>
+
+    <!-- ============================================ -->
+    <!--              Note Calculator                 -->
+    <!-- ============================================ -->
+
+    <section id="note-calc">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Free Tools</span>
+                <h2 class="cs-title">Explore Your Options</h2>
+                <p class="cs-text">
+                    Whether you are holding a note or looking to invest in one, use our calculators to see what your next move could look like.
+                </p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="calc-tabs">
+                <button class="calc-tab active" data-tab="sellers">For Sellers</button>
+                <button class="calc-tab" data-tab="buyers">For Investors</button>
+            </div>
+
+            <!-- Seller Calculator -->
+            <div class="calc-panel active" id="calc-sellers">
+                <div class="calc-form">
+                    <h3 class="calc-heading">What Could Your Note Be Worth?</h3>
+                    <p class="calc-description">Get a ballpark estimate of your mortgage note's value. Enter your note details below.</p>
+                    <div class="calc-field">
+                        <label for="seller-balance">Remaining Balance Owed</label>
+                        <div class="calc-input-wrapper">
+                            <span class="calc-prefix">$</span>
+                            <input type="text" id="seller-balance" inputmode="numeric" placeholder="150,000">
+                        </div>
+                    </div>
+                    <div class="calc-field">
+                        <label for="seller-rate">Interest Rate on the Note</label>
+                        <div class="calc-input-wrapper">
+                            <input type="text" id="seller-rate" inputmode="decimal" placeholder="6.5">
+                            <span class="calc-suffix">%</span>
+                        </div>
+                    </div>
+                    <div class="calc-field">
+                        <label for="seller-term">Remaining Term</label>
+                        <div class="calc-input-wrapper">
+                            <input type="number" id="seller-term" inputmode="numeric" placeholder="20">
+                            <span class="calc-suffix">years</span>
+                        </div>
+                    </div>
+                    <div class="calc-field">
+                        <label for="seller-payment">Monthly Payment</label>
+                        <div class="calc-input-wrapper">
+                            <span class="calc-prefix">$</span>
+                            <input type="text" id="seller-payment" inputmode="numeric" placeholder="1,100">
+                        </div>
+                    </div>
+                    <button class="cs-button-solid calc-btn" id="seller-calculate">Calculate Estimate Instantly</button>
+                    <p class="calc-helper">No sign-up required — results appear right here.</p>
+                </div>
+                <div class="calc-result" id="seller-result" style="display: none;">
+                    <h3 class="calc-result-title">Estimated Note Value</h3>
+                    <span class="calc-result-number" id="seller-value"></span>
+                    <p class="calc-result-range" id="seller-range"></p>
+                    <p class="calc-result-text">
+                        This is a rough estimate based on typical market conditions. Your actual offer may be higher or lower depending on factors like borrower credit, property type, loan-to-value ratio, and payment history.
+                    </p>
+                    <a href="/contact/" class="cs-button-solid">Get Your Exact Quote</a>
+                    <button class="calc-reset" id="seller-reset">Reset Calculator</button>
+                </div>
+                <p class="calc-disclaimer">
+                    <strong>Disclaimer:</strong> This calculator provides a rough, illustrative estimate only and does not constitute an offer, appraisal, or guarantee of value. Actual note pricing depends on many factors including borrower creditworthiness, property value, loan-to-value ratio, payment history, seasoning, and current market conditions. Contact us for a no-obligation, personalized quote.
+                </p>
+            </div>
+
+            <!-- Buyer Calculator -->
+            <div class="calc-panel" id="calc-buyers">
+                <div class="calc-form">
+                    <h3 class="calc-heading">What Could Your Investment Earn?</h3>
+                    <p class="calc-description">See how mortgage note returns compare to other common investments.</p>
+                    <div class="calc-field">
+                        <label for="buyer-amount">Investment Amount</label>
+                        <div class="calc-input-wrapper">
+                            <span class="calc-prefix">$</span>
+                            <input type="text" id="buyer-amount" inputmode="numeric" placeholder="50,000">
+                        </div>
+                    </div>
+                    <div class="calc-field">
+                        <label for="buyer-term">Investment Period</label>
+                        <div class="calc-input-wrapper">
+                            <input type="number" id="buyer-term" inputmode="numeric" placeholder="5" min="1" max="30">
+                            <span class="calc-suffix">years</span>
+                        </div>
+                    </div>
+                    <button class="cs-button-solid calc-btn" id="buyer-calculate">Calculate Returns Instantly</button>
+                    <p class="calc-helper">No sign-up required — results appear right here.</p>
+                </div>
+                <div class="calc-result" id="buyer-result" style="display: none;">
+                    <h3 class="calc-result-title">Projected Returns Comparison</h3>
+                    <div class="calc-comparison">
+                        <div class="calc-compare-item highlight">
+                            <span class="calc-compare-label">Mortgage Notes</span>
+                            <span class="calc-compare-rate">8 - 12% avg. yield</span>
+                            <span class="calc-compare-value" id="buyer-notes"></span>
+                            <span class="calc-compare-sub">No tenants. No toilets. No hassle.</span>
+                        </div>
+                        <div class="calc-compare-item">
+                            <span class="calc-compare-label">Stock Market (S&P 500)</span>
+                            <span class="calc-compare-rate">~10% avg. return</span>
+                            <span class="calc-compare-value" id="buyer-stocks"></span>
+                        </div>
+                        <div class="calc-compare-item">
+                            <span class="calc-compare-label">High-Yield Savings</span>
+                            <span class="calc-compare-rate">~4.5% APY</span>
+                            <span class="calc-compare-value" id="buyer-savings"></span>
+                        </div>
+                        <div class="calc-compare-item">
+                            <span class="calc-compare-label">Traditional CDs</span>
+                            <span class="calc-compare-rate">~4% APY</span>
+                            <span class="calc-compare-value" id="buyer-cds"></span>
+                        </div>
+                    </div>
+                    <p class="calc-result-text">
+                        Mortgage note investing offers real-estate-backed returns without the headaches of being a landlord — no property management, no maintenance calls, no vacancies.
+                    </p>
+                    <a href="/contact/" class="cs-button-solid">Explore Note Investments</a>
+                    <button class="calc-reset" id="buyer-reset">Reset Calculator</button>
+                </div>
+                <p class="calc-disclaimer">
+                    <strong>Disclaimer:</strong> These projections are hypothetical illustrations based on historical averages and typical industry ranges. They do not guarantee future results. Actual returns vary based on individual note characteristics, market conditions, and risk factors. Past performance is not indicative of future results. This is not financial advice.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    (function() {
+        // Tab switching
+        const tabs = document.querySelectorAll('.calc-tab');
+        const panels = document.querySelectorAll('.calc-panel');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                panels.forEach(p => p.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('calc-' + tab.dataset.tab).classList.add('active');
+            });
+        });
+
+        // Format number as currency
+        function formatCurrency(num) {
+            return '$' + Math.round(num).toLocaleString('en-US');
+        }
+
+        // Parse currency input (strip $ and commas)
+        function parseCurrency(val) {
+            return parseFloat(val.replace(/[$,\s]/g, ''));
+        }
+
+        // Auto-format currency inputs on blur
+        document.querySelectorAll('#seller-balance, #seller-payment, #buyer-amount').forEach(input => {
+            input.addEventListener('blur', function() {
+                const val = parseCurrency(this.value);
+                if (!isNaN(val) && val > 0) {
+                    this.value = Math.round(val).toLocaleString('en-US');
+                }
+            });
+        });
+
+        // Seller Calculator
+        document.getElementById('seller-calculate').addEventListener('click', function() {
+            const balance = parseCurrency(document.getElementById('seller-balance').value);
+            const rate = parseFloat(document.getElementById('seller-rate').value);
+            const term = parseInt(document.getElementById('seller-term').value);
+            const payment = parseCurrency(document.getElementById('seller-payment').value);
+
+            if (isNaN(balance) || isNaN(rate) || isNaN(term) || isNaN(payment)) {
+                alert('Please fill in all fields with valid numbers.');
+                return;
+            }
+
+            // Discount the note's cash flows at typical investor yield (10-14%)
+            const lowYield = 0.10;  // investor wants 10% → higher price for seller
+            const highYield = 0.14; // investor wants 14% → lower price for seller
+            const months = term * 12;
+
+            function pvAnnuity(pmt, monthlyRate, n) {
+                if (monthlyRate === 0) return pmt * n;
+                return pmt * (1 - Math.pow(1 + monthlyRate, -n)) / monthlyRate;
+            }
+
+            const highEstimate = pvAnnuity(payment, lowYield / 12, months);
+            const lowEstimate = pvAnnuity(payment, highYield / 12, months);
+            const midEstimate = (highEstimate + lowEstimate) / 2;
+
+            document.getElementById('seller-value').textContent = formatCurrency(midEstimate);
+            document.getElementById('seller-range').textContent =
+                'Typical range: ' + formatCurrency(lowEstimate) + ' — ' + formatCurrency(highEstimate);
+
+            document.getElementById('seller-result').style.display = '';
+            document.querySelector('#calc-sellers .calc-form').style.display = 'none';
+        });
+
+        document.getElementById('seller-reset').addEventListener('click', function() {
+            document.getElementById('seller-result').style.display = 'none';
+            document.querySelector('#calc-sellers .calc-form').style.display = '';
+            ['seller-balance', 'seller-rate', 'seller-term', 'seller-payment'].forEach(id => {
+                document.getElementById(id).value = '';
+            });
+        });
+
+        // Buyer Calculator
+        document.getElementById('buyer-calculate').addEventListener('click', function() {
+            const amount = parseCurrency(document.getElementById('buyer-amount').value);
+            const term = parseInt(document.getElementById('buyer-term').value);
+
+            if (isNaN(amount) || isNaN(term) || amount <= 0 || term <= 0) {
+                alert('Please fill in all fields with valid numbers.');
+                return;
+            }
+
+            // Compound growth at different rates
+            const noteRate = 0.10; // use 10% as midpoint for notes
+            const stockRate = 0.10;
+            const savingsRate = 0.045;
+            const cdRate = 0.04;
+
+            function futureValue(principal, rate, years) {
+                return principal * Math.pow(1 + rate, years);
+            }
+
+            document.getElementById('buyer-notes').textContent = formatCurrency(futureValue(amount, noteRate, term));
+            document.getElementById('buyer-stocks').textContent = formatCurrency(futureValue(amount, stockRate, term));
+            document.getElementById('buyer-savings').textContent = formatCurrency(futureValue(amount, savingsRate, term));
+            document.getElementById('buyer-cds').textContent = formatCurrency(futureValue(amount, cdRate, term));
+
+            document.getElementById('buyer-result').style.display = '';
+            document.querySelector('#calc-buyers .calc-form').style.display = 'none';
+        });
+
+        document.getElementById('buyer-reset').addEventListener('click', function() {
+            document.getElementById('buyer-result').style.display = 'none';
+            document.querySelector('#calc-buyers .calc-form').style.display = '';
+            ['buyer-amount', 'buyer-term'].forEach(id => {
+                document.getElementById(id).value = '';
+            });
+        });
+    })();
+    </script>
 
     <!-- ============================================ -->
     <!--                 Side By Side                 -->
@@ -178,11 +414,11 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     About Pacific Prosperity Financial
                 </h2>
                 <p class="cs-text">
-                    Pacific Prosperity Financial is a mortgage note brokerage dedicated to helping note holders unlock the value of their real estate notes. We bridge the gap between note sellers and investors, ensuring smooth and transparent transactions every step of the way.
+                    Pacific Prosperity Financial exists to serve two groups of people: note holders who want to convert their mortgage notes into cash, and investors looking for real-estate-backed returns without the headaches of property ownership. Founded by Tim Joslen, who brings over 35 years in real estate and financing, we keep things simple, honest, and focused on getting you the best outcome.
                 </p>
                 <div class="cs-quote">
                     <span class="cs-quote-text">
-                        Our mission is to provide note holders with the best possible outcomes while offering investors access to quality mortgage note opportunities.
+                        I know that most note holders are not industry insiders — they just want a fair deal from someone they can trust. That is exactly what I am here to provide.
                     </span>
                     <span class="cs-name">Tim Joslen</span>
                     <span class="cs-job">Founder</span>
@@ -225,13 +461,10 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     Why Choose Pacific Prosperity Financial
                 </h2>
                 <p class="cs-text">
-                    With deep expertise in the mortgage note industry, we understand the complexities of note transactions and work tirelessly to deliver the best results for our clients. Whether you are looking to sell a single note or manage an entire portfolio, we have the knowledge and network to help.
+                    <strong>For sellers:</strong> We make it fast, fair, and simple. Your note gets marketed to our network of qualified investors who compete to give you the best price. No fees, no hidden costs, and we handle all the paperwork. Most transactions close in 30-45 days.
                 </p>
                 <p class="cs-text">
-                    We pride ourselves on transparency, fair pricing, and personalized service. Every transaction is handled with the utmost professionalism, and we keep you informed throughout the entire process.
-                </p>
-                <p class="cs-text">
-                    Our extensive network of investors means we can find the right buyer for your note quickly and efficiently, maximizing the value you receive.
+                    <strong>For investors:</strong> We do the hard work of sourcing and vetting notes so you can invest with confidence. Every note comes with thorough due diligence, transparent pricing, and the support of a team with decades of real estate financing experience.
                 </p>
                 <a href="/services/" class="cs-button-solid">View Our Services</a>
             </div>
@@ -245,8 +478,8 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <section id="stats">
         <div class="cs-container">
             <div class="cs-stat">
-                <span class="cs-number">10+</span>
-                <span class="cs-desc">Years Experience</span>
+                <span class="cs-number">35+</span>
+                <span class="cs-desc">Years Between Real Estate & Financing</span>
             </div>
             <div class="cs-stat">
                 <span class="cs-number">$10M+</span>
@@ -263,48 +496,41 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </div>
     </section>
 
+    <!-- Reviews section hidden until testimonials are available -->
+
     <!-- ============================================ -->
-    <!--                   Reviews                    -->
+    <!--                 Blog Articles                -->
     <!-- ============================================ -->
 
-    <section id="reviews-67">
+    <section id="blog-preview">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Our Reviews</span>
-                <h2 class="cs-title">
-                    Words From Our Customers
-                </h2>
+                <span class="cs-topper">Our Blog</span>
+                <h2 class="cs-title">Latest Insights</h2>
                 <p class="cs-text">
-                    Our clients trust us to deliver fair offers and seamless transactions. Here is what some of them have to say about working with Pacific Prosperity Financial.
+                    Whether you are new to mortgage notes or exploring your options, our articles break down the process in plain language so you can make informed decisions.
                 </p>
             </div>
             <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, debitis!
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Note Seller</span>
-                        </div>
-                    </div>
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Note Seller</span>
-                        </div>
-                    </div>
-                </li>
+                {%- for post in collections.post | reverse -%}
+                    {% if loop.index <= 3 %}
+                    <li class="cs-item">
+                        <a href="{{ post.url }}" class="cs-link">
+                            <picture class="cs-picture">
+                                <source srcset="{% getUrl post.data.image | resize({ width: 576, height: 400 }) | webp %}" type="image/webp">
+                                <img src="{% getUrl post.data.image | resize({ width: 576, height: 400 }) | jpeg %}" alt="{{ post.data.imageAlt }}" width="576" height="400" loading="lazy" decoding="async">
+                            </picture>
+                            <div class="cs-info">
+                                <span class="cs-date">{{ post.date | postDate }}</span>
+                                <h3 class="cs-h3">{{ post.data.title }}</h3>
+                                <p class="cs-item-text">{{ post.data.description }}</p>
+                            </div>
+                        </a>
+                    </li>
+                    {% endif %}
+                {%- endfor -%}
             </ul>
-            <a href="/reviews/" class="cs-button-solid">Read All Reviews</a>
+            <a href="/blog/" class="cs-button-solid">View All Articles</a>
         </div>
     </section>
 

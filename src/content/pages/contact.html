@@ -1,6 +1,6 @@
 ---
 title: "Contact | Pacific Prosperity Financial"
-description: "Get in touch with Pacific Prosperity Financial to discuss buying or selling mortgage notes. We are here to help with your note brokering needs."
+description: "Ready to sell your mortgage note or explore note investments? Contact Pacific Prosperity Financial for a free, no-obligation consultation."
 permalink: "/contact/"
 ---
 
@@ -9,7 +9,8 @@ permalink: "/contact/"
 {% block head %}
     <link rel="stylesheet" href="/assets/css/contact.css">
     <link rel="preload" as="image" href="/assets/images/page-banner-m.webp"/>
-    <link rel="preload" as="image" href="/assets/images/contact-panel-m.webp"/>
+    <link rel="preload" as="image" href="/assets/images/service-consultation-m.webp"/>
+    <script src="/assets/js/contact.js" defer></script>
 {% endblock %}
 
 {% block body %}
@@ -48,7 +49,7 @@ permalink: "/contact/"
                     <span class="cs-topper">Contact</span>
                     <h2 class="cs-title">Get in Touch</h2>
                     <p class="cs-text">
-                        Have questions about buying or selling mortgage notes? Fill out the form below and our team will get back to you within one business day.
+                        Whether you are looking to sell a mortgage note or explore note investment opportunities, we would love to hear from you. Fill out the form below and we will get back to you within one business day.
                     </p>
                 </div>
                 <form id="cs-form-265" name="Contact Form" method="post" netlify>
@@ -67,6 +68,22 @@ permalink: "/contact/"
                     <label>
                         How Did You Find Us
                         <input type="text" id="find-265" name="find-us" placeholder="How did you find us?">
+                    </label>
+                    <label>
+                        Are You Buying or Selling?
+                        <select id="buying-selling-265" name="buying-or-selling">
+                            <option value="">Select one...</option>
+                            <option value="selling">Selling a Note</option>
+                            <option value="buying">Buying / Investing</option>
+                        </select>
+                    </label>
+                    <label id="buying-experience-label" class="cs-label-conditional" style="display: none;">
+                        Do You Have Prior Experience Buying Notes? If So, What Type?
+                        <textarea id="buying-experience-265" name="buying-experience" placeholder="e.g., Performing residential notes, non-performing commercial notes..."></textarea>
+                    </label>
+                    <label>
+                        Where Are You Located?
+                        <input type="text" id="location-265" name="location" placeholder="City, State">
                     </label>
                     <label class="cs-label-message">
                         Message
@@ -91,11 +108,11 @@ permalink: "/contact/"
                 <!-- Background Image-->
                 <picture class="cs-bg-picture">
                     <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/assets/images/contact-panel-m.webp">
+                    <source media="(max-width: 600px)" srcset="/assets/images/service-consultation-m.webp">
                     <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="/assets/images/contact-panel-t.webp">
+                    <source media="(max-width: 1024px)" srcset="/assets/images/service-consultation-d.webp">
                     <!--Desktop Image-->
-                    <img src="/assets/images/contact-panel-d.webp" alt="office building" width="542" height="578" decoding="async">
+                    <img src="/assets/images/service-consultation-d.webp" alt="" width="542" height="520" decoding="async">
                 </picture>
             </div>
         </div>

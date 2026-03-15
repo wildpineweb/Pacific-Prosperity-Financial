@@ -4,7 +4,7 @@ url: how-to-sell-your-mortgage-note
 description: Learn the complete process of selling your mortgage note, from preparation to closing. Get competitive offers and convert future payments into immediate cash.
 author: Tim Joslen
 authorImage: /assets/images/blog/tim-joslen.jpg
-date: 2026-02-10T10:00:00.000Z
+date: 2026-02-09T10:00:00.000Z
 tags:
     - post
     - featured

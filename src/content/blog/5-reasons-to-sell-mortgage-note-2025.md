@@ -4,7 +4,7 @@ url: 5-reasons-to-sell-mortgage-note-2026
 description: Discover the top reasons mortgage note holders are selling in 2026, from interest rate opportunities to estate planning strategies. Is now the right time for you?
 author: Tim Joslen
 authorImage: /assets/images/blog/tim-joslen.jpg
-date: 2026-02-08T10:00:00.000Z
+date: 2026-01-12T10:00:00.000Z
 tags:
     - post
     - featured

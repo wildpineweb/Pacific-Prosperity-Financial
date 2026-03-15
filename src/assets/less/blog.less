@@ -499,8 +499,14 @@
 
             a:not(.cs-button-solid) {
                 font-size: inherit;
+                font-weight: 600;
                 text-decoration: underline;
-                color: var(--goldenFinch);
+                color: var(--primary);
+                transition: color 0.3s;
+
+                &:hover {
+                    color: var(--goldenFinch);
+                }
             }
 
             .cs-button-solid {
@@ -554,6 +560,14 @@
                 span,
                 li {
                     opacity: 0.8;
+                }
+
+                a:not(.cs-button-solid) {
+                    color: var(--goldenFinch);
+
+                    &:hover {
+                        color: #e8b55c;
+                    }
                 }
             }
         }

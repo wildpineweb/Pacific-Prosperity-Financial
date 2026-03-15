@@ -92,6 +92,17 @@
 		max-width: 40.625rem;
 		margin: 0;
 		color: var(--bodyTextColor);
+
+		a {
+			color: var(--primary);
+			font-weight: 600;
+			text-decoration: underline;
+			transition: color 0.3s;
+
+			&:hover {
+				color: var(--goldenFinch);
+			}
+		}
 	}
 }
 
@@ -313,6 +324,14 @@
 
 		.cs-topper {
 			color: var(--goldenFinch);
+		}
+
+		.cs-text a {
+			color: var(--goldenFinch);
+
+			&:hover {
+				color: #e8b55c;
+			}
 		}
 	}
 }
