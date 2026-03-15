@@ -1,0 +1,59 @@
+---
+title: "Page Not Found | Pacific Prosperity Financial"
+description: "The page you're looking for doesn't exist. Return to Pacific Prosperity Financial's homepage to explore our mortgage note services."
+permalink: "/404.html"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <style>
+        #error-404 {
+            padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+            text-align: center;
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #error-404 .cs-container {
+            width: 100%;
+            max-width: 34.375rem;
+            margin: auto;
+        }
+
+        #error-404 .cs-number {
+            font-size: clamp(6rem, 15vw, 12rem);
+            font-family: var(--headerFont);
+            font-weight: 900;
+            line-height: 1;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        #error-404 .cs-title {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: 1rem;
+        }
+
+        #error-404 .cs-text {
+            margin-bottom: 2rem;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <section id="error-404">
+        <div class="cs-container">
+            <span class="cs-number">404</span>
+            <h1 class="cs-title">Page Not Found</h1>
+            <p class="cs-text">
+                Sorry, the page you are looking for does not exist or has been moved. Let us help you find what you need.
+            </p>
+            <a href="/" class="cs-button-solid">Back to Home</a>
+        </div>
+    </section>
+{% endblock %}

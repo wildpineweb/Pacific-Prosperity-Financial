@@ -16,8 +16,15 @@
         <meta property="og:description" content="{{ description }}"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
-        <meta property="og:image" content="{{ image or "/assets/svgs/PPF Logo.svg" }}"/>
-        <meta property="og:image:secure_url" content="{{ image or "/assets/svgs/PPF Logo.svg" }}"/>
+        {% set ogImage = client.domain ~ (image or "/assets/favicons/web-app-manifest-512x512.png") %}
+        <meta property="og:image" content="{{ ogImage }}"/>
+        <meta property="og:image:secure_url" content="{{ ogImage }}"/>
+
+        <!--Twitter Card-->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="{{ title }}"/>
+        <meta name="twitter:description" content="{{ description }}"/>
+        <meta name="twitter:image" content="{{ ogImage }}"/>
 
         <!--Favicons-->
         <!-- https://realfavicongenerator.net/ -->
