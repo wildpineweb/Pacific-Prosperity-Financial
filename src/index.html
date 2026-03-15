@@ -8,6 +8,10 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 {% extends "layouts/base.html" %}
 
 {% block head %}
+    <!-- Preload hero LCP image for mobile and tablet -->
+    <link rel="preload" as="image" href="/assets/images/home-hero-bg-m.webp" media="(max-width: 600px)">
+    <link rel="preload" as="image" href="/assets/images/home-hero-bg-t.webp" media="(min-width: 601px) and (max-width: 1024px)">
+
     <!-- Critical styles are loaded first -->
     <link rel="stylesheet" href="/assets/css/critical.css"/>
 
@@ -49,8 +53,10 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <picture class="cs-background">
             <!--Mobile Image-->
             <source media="(max-width: 600px)" srcset="/assets/images/home-hero-bg-m.webp">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="/assets/images/home-hero-bg-t.webp">
             <!--Desktop Image-->
-            <img src="/assets/images/home-hero-bg-d.webp" alt="" width="2048" height="1922" loading="eager" decoding="async">
+            <img src="/assets/images/home-hero-bg-d.webp" alt="" width="2048" height="1922" loading="eager" decoding="async" fetchpriority="high">
         </picture>
     </section>
 
