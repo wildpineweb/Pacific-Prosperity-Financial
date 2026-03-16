@@ -66,10 +66,9 @@
                 <span class="cs-header">Contact</span>
             </li>
             <li class="cs-contact-li">
-                <a class="cs-contact-link cs-address" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
+                <span class="cs-contact-link cs-address">
                     {{ client.address.city }}, {{ client.address.state }}
-                    {{ client.address.zip }}
-                </a>
+                </span>
             </li>
             <li class="cs-contact-li">
                 <a class="cs-contact-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>

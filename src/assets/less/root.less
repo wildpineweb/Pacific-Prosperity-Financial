@@ -1360,8 +1360,8 @@
 		}
 
 		.cs-logo {
-			/* 210px - 240px */
-			width: clamp(13.125rem, 8vw, 15rem);
+			/* ~50% of original (210px) on mobile */
+			width: (105/16rem);
 			height: auto;
 			display: block;
 			/* 28px - 44px */
@@ -1508,6 +1508,11 @@
 		.cs-address {
 			font-size: (16/16rem);
 			margin-bottom: (20/16rem);
+			cursor: default;
+
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 }
@@ -1515,6 +1520,11 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
 	#cs-footer-275 {
+		.cs-logo {
+			/* ~75% of original (210px) */
+			width: (158/16rem);
+		}
+
 		.cs-container {
 			max-width: (1280/16rem);
 			row-gap: 0;
