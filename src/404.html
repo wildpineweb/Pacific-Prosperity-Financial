@@ -10,7 +10,8 @@ permalink: "/404.html"
     <link rel="stylesheet" href="/assets/css/root.css">
     <style>
         #error-404 {
-            padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+            /* top padding accounts for fixed nav */
+            padding: clamp(9rem, 25vw, 12rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
             text-align: center;
             min-height: 50vh;
             display: flex;
@@ -41,6 +42,20 @@ permalink: "/404.html"
 
         #error-404 .cs-text {
             margin-bottom: 2rem;
+        }
+
+        /* Dark Mode */
+        body.dark-mode #error-404 .cs-number {
+            color: var(--accent);
+        }
+
+        body.dark-mode #error-404 .cs-title {
+            color: var(--bodyTextColorWhite);
+        }
+
+        body.dark-mode #error-404 .cs-text {
+            color: var(--bodyTextColorWhite);
+            opacity: 0.8;
         }
     </style>
 {% endblock %}
