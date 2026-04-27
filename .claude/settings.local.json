@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:pagespeed.web.dev)",
+      "WebFetch(domain:www.googleapis.com)",
+      "Bash(ls -lh src/assets/images/home-hero-bg-*.webp)",
+      "Bash(npm list:*)",
+      "Bash(npx --help)",
+      "Bash(pip install:*)",
+      "Bash(where python:*)",
+      "Bash(pip --version)",
+      "Bash(python -c \":*)",
+      "Bash(ls *.ttf)",
+      "Bash(while read:*)",
+      "Bash(do echo:*)",
+      "Bash(done)",
+      "Bash(npm run:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where npx:*)",
+      "Bash(where npm:*)",
+      "Bash(npm install:*)",
+      "Bash(ls \"/c/Users/mattj/OneDrive/Career/Wild Pine Web Designs/!Clients/Pacific Prosperity Financial/Website/Pacific-Prosperity-Financial/node_modules/.bin/serve\"*)",
+      "Bash(python -c \"from PIL import Image; print\\(''Pillow OK''\\)\")",
+      "Bash(python -c \"from cairosvg import svg2png; print\\(''cairosvg OK''\\)\")",
+      "Bash(node -e \"const sharp=require\\('sharp'\\);\\(async\\(\\)=>{const a=await sharp\\('src/assets/images/tim-joslen-headshot-d.webp'\\).metadata\\(\\);const b=await sharp\\('src/assets/images/tim-joslen-headshot-m.webp'\\).metadata\\(\\);const c=await sharp\\('public/assets/images/matt-joslen-headshot-d.png'\\).metadata\\(\\);const d=await sharp\\('public/assets/images/matt-joslen-headshot-m.png'\\).metadata\\(\\);console.log\\('tim-d',a.width,a.height\\);console.log\\('tim-m',b.width,b.height\\);console.log\\('matt-d-src',c.width,c.height\\);console.log\\('matt-m-src',d.width,d.height\\);}\\)\\(\\)\")",
+      "Bash(node -e \"const sharp=require\\('sharp'\\);\\(async\\(\\)=>{await sharp\\('public/assets/images/matt-joslen-headshot-d.png'\\).webp\\({quality:82}\\).toFile\\('src/assets/images/matt-joslen-headshot-d.webp'\\);await sharp\\('public/assets/images/matt-joslen-headshot-m.png'\\).webp\\({quality:82}\\).toFile\\('src/assets/images/matt-joslen-headshot-m.webp'\\);const fs=require\\('fs'\\);console.log\\('d',fs.statSync\\('src/assets/images/matt-joslen-headshot-d.webp'\\).size\\);console.log\\('m',fs.statSync\\('src/assets/images/matt-joslen-headshot-m.webp'\\).size\\);}\\)\\(\\)\")"
+    ]
+  }
+}

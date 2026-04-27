@@ -11,7 +11,8 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #RPsbs-313 {
+    #RPsbs-313,
+    #RPsbs-314 {
         padding: var(--sectionPadding);
 
         .cs-container {
@@ -127,7 +128,8 @@
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #RPsbs-313 {
+    #RPsbs-313,
+    #RPsbs-314 {
         .cs-container {
             flex-flow: row;
             justify-content: space-between;
@@ -143,12 +145,21 @@
             margin: 0;
         }
     }
+
+    #RPsbs-314 {
+        padding-top: 0;
+
+        .cs-container {
+            flex-direction: row-reverse;
+        }
+    }
 }
 
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #RPsbs-313 {
+        #RPsbs-313,
+        #RPsbs-314 {
             .cs-image-group {
                 &:before,
                 &:after {
